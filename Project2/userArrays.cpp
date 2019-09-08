@@ -41,28 +41,28 @@ int main()
 		B.printArray();
 
 
-		cout << endl << "***************************************************" << endl;
-		cout << "Overloading + and =" << endl;
-		cout << "***************************************************" << endl;
+		//cout << endl << "***************************************************" << endl;
+		//cout << "Overloading + and =" << endl;
+		//cout << "***************************************************" << endl;
 
-		Arrays* C;
+		//Arrays* C;
 
-		cout << "A= ";
-		A.printArray();
+		//cout << "A= ";
+		//A.printArray();
 
-		cout << "B= ";
-		B.printArray();
+		//cout << "B= ";
+		//B.printArray();
 
-		C = A + B;
+		//C = A + B;
 
-		cout << "Result C=A + B ";
-		C->printArray();
+		//cout << "Result C=A + B ";
+		//C->printArray();
 
-		cout << "A= ";
-		A.printArray();
+		//cout << "A= ";
+		//A.printArray();
 
-		cout << "B= ";
-		B.printArray();
+		//cout << "B= ";
+		//B.printArray();
 
 
 		cout << endl << "***************************************************" << endl;
@@ -81,48 +81,48 @@ int main()
 		cout << "A.B=" << punto << endl;
 
 
-		cout << endl << "***************************************************" << endl;
-		cout << "Overloading * (an Array multiply by 10) C = A * 10" << endl;
-		cout << "***************************************************" << endl;
+		//cout << endl << "***************************************************" << endl;
+		//cout << "Overloading * (an Array multiply by 10) C = A * 10" << endl;
+		//cout << "***************************************************" << endl;
 
 
-		cout << "A= ";
-		A.printArray();
+		//cout << "A= ";
+		//A.printArray();
 
 
-		C = A * 10;
-		cout << "C = ";
-		C->printArray();
-
-
-
-		cout << endl << "***************************************************" << endl;
-		cout << "Overloading *= (an Array multiply by 10) A*= 10" << endl;
-		cout << "***************************************************" << endl;
-
-
-		cout << "A= ";
-		A.printArray();
-
-
-		A *= 10;
-		cout << "A = ";
-		A.printArray();
+		//C = A * 10;
+		//cout << "C = ";
+		//C->printArray();
 
 
 
+		//cout << endl << "***************************************************" << endl;
+		//cout << "Overloading *= (an Array multiply by 10) A*= 10" << endl;
+		//cout << "***************************************************" << endl;
+
+
+		//cout << "A= ";
+		//A.printArray();
+
+
+		//A *= 10;
+		//cout << "A = ";
+		//A.printArray();
 
 
 
-		cout << endl << "***************************************************" << endl;
-		cout << "Overloading =" << endl;
-		cout << "***************************************************" << endl;
 
-		B += A;
-		cout << "A= ";
-		A.printArray();
-		cout << "B= ";
-		B.printArray();
+
+
+		//cout << endl << "***************************************************" << endl;
+		//cout << "Overloading =" << endl;
+		//cout << "***************************************************" << endl;
+
+		//B += A;
+		//cout << "A= ";
+		//A.printArray();
+		//cout << "B= ";
+		//B.printArray();
 
 
 	}

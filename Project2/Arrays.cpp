@@ -85,45 +85,49 @@ int Arrays::getSize()
 //Overloading += Operator
 void Arrays::operator +=(const Arrays& B)
 {
-
+	int i;
+	for (i = 0; i < size; i++) {
+		this->Arr[i] += B.Arr[i];
+	}
 }
-
 
 //Overloading *= Operator for Array*int
 void Arrays::operator *=(int val)
 {
-
-
-}
-//Overloading * operator (dot product or scalar product)
-double Arrays::operator *(Arrays& B)
-{
-
+	int i;
+	for (i = 0; i < this->size; i++) {
+		this->Arr[i] *= val;
+	}
 
 }
+////Overloading * operator (dot product or scalar product)
+//double Arrays::operator *(Arrays& B)
+//{
+//	
+//}
 
 
 
-//Overloading + Operator
-Arrays* Arrays::operator +(Arrays& B)
-{
-
-
-
-}
-
-
-
-//Overloading * Operator for Array*int
-Arrays* Arrays::operator *(int val)
-{
-
-
-}
-
-
-//Overloading = Operator
-void Arrays::operator =(const Arrays& B)
-{
-
-}
+////Overloading + Operator
+//Arrays* Arrays::operator +(Arrays& B)
+//{
+//
+//
+//
+//}
+//
+//
+//
+////Overloading * Operator for Array*int
+//Arrays* Arrays::operator *(int val)
+//{
+//
+//
+//}
+//
+//
+////Overloading = Operator
+//void Arrays::operator =(const Arrays& B)
+//{
+//
+//}
