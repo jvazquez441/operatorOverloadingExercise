@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Arrays.cpp" />
+    <ClCompile Include="userArrays.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arrays.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8EE3FB2A-64CA-4BC3-97EC-D4916084AABA}</ProjectGuid>
@@ -122,13 +129,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\operatorOverloading_Students\Arrays.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\operatorOverloading_Students\Arrays.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\operatorOverloading_Students\userArrays.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
