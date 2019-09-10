@@ -1,7 +1,10 @@
 #include <iostream>
 #include <stdlib.h>
 
-//COSC-335 Data Structures
+
+// Jonathan Vazquez Rivera
+// jvazquez441@email.suagm.edu
+// COSC-335 Data Structures 2020-01
 
 using namespace std;
 

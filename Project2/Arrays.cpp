@@ -1,6 +1,8 @@
 #include "Arrays.h"
 
-//COSC-335 Data Structures
+// Jonathan Vazquez Rivera
+// jvazquez441@email.suagm.edu
+// COSC-335 Data Structures 2020-01
 
 //Default constructor: it creates an Array of 100 positions
 Arrays::Arrays()
@@ -87,7 +89,7 @@ void Arrays::operator +=(const Arrays& B)
 {
 	int i;
 	for (i = 0; i < size; i++) {
-		this->Arr[i] += B.Arr[i];
+		Arr[i] += B.Arr[i];
 	}
 }
 
@@ -95,39 +97,63 @@ void Arrays::operator +=(const Arrays& B)
 void Arrays::operator *=(int val)
 {
 	int i;
-	for (i = 0; i < this->size; i++) {
-		this->Arr[i] *= val;
+	for (i = 0; i < size; i++) {
+		Arr[i] *= val;
 	}
 
 }
-////Overloading * operator (dot product or scalar product)
-//double Arrays::operator *(Arrays& B)
-//{
-//	
-//}
+//Overloading * operator (dot product or scalar product)
+double Arrays::operator *(Arrays& B)
+{
+	int i;
+	double sum = 0;
+	for (i = 0; i < size; i++) {
+		sum += Arr[i] * B.Arr[i];
+	}
+	return sum;
+}
 
 
 
 ////Overloading + Operator
-//Arrays* Arrays::operator +(Arrays& B)
-//{
+Arrays* Arrays::operator +(Arrays& B)
+{
+
+	Arrays *C = new Arrays(size);
+
+	if (size == B.size) {
+		for (int i = 0; i < size; i++) {
+			C->Arr[i] = Arr[i] + B.Arr[i];
+		}
+	}
+
+	return C;
+
+}
 //
 //
 //
-//}
-//
-//
-//
-////Overloading * Operator for Array*int
-//Arrays* Arrays::operator *(int val)
-//{
-//
-//
-//}
-//
-//
-////Overloading = Operator
-//void Arrays::operator =(const Arrays& B)
-//{
-//
-//}
+//Overloading * Operator for Array*int
+Arrays* Arrays::operator *(int val)
+{
+
+	Arrays* C = new Arrays(size);
+
+	for (int i = 0; i < size; i++) {
+		C->Arr[i] = Arr[i] * val;
+	}
+
+	return C;
+}
+
+
+//Overloading = Operator
+void Arrays::operator =(const Arrays& B)
+{
+	cout << " Operator = activated" << endl;
+	if (size == B.size) {
+		for (int i = 0; i < size; i++) {
+			Arr[i] = B.Arr[i];
+		}
+	}
+}
